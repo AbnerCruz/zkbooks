@@ -3,7 +3,7 @@ const { dirname } = require("path");
 const path = require("path");
 const app = express();
 const router = express.Router();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 
 //TEMPLATE
@@ -15,7 +15,7 @@ router.get("/",(req,res)=>{
 })
 
 app.use(router);
-app.listen(port,()=>{
+app.listen(port || 3000,()=>{
     console.log("Server On");
     console.log(__dirname)
 })
