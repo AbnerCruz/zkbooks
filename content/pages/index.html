@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>ZkBook's</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <base href="/">
+        <link  href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css">    
+    </head>
+    <body>
+        <header>
+            <div id="menu_div">
+                <div id="logo_div">
+                    <div id="logo_img_div">
+                        <div id="logo_img_div_block">
+                            <img src="/img/zblogo.png" style="width: 100%; height:100%;display:flex;border-radius:50px;">
+                        </div>
+                    </div>
+                    <div id="logo_text_div">
+                        <div id="logo_text_div_block"><h1><span style="display: block;padding:0;"><a href="../../pages/index.html" style="text-decoration: none;color:#e5e9f2;">ZkBook's</a></span></h1>
+                        </div>
+                    </div>
+                </div>
+                <div id="search_div">
+                    <div id="search_div_block">
+                        
+                        <div id="search_input_div">
+                            <label>
+                                <input type="text" id="search_input" autocomplete="on" placeholder="Pesquisar" value="">
+                            </label>
+                        </div>
+                        <div id="search_img_div"><img src="/img/search_icon.png" style="width: 100%; height:100%;"></div>
+                    </div>
+                </div>
+                <div id="menu_perfil_div">
+                    <div id="perfil_div">
+                        <div id="perfil_img_div">
+                            <img src="/img/icon_character.png" style="width: 90%;height:90%; font-size:100%;display:block;margin:auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div id="main">
+            <div id="ads_div">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4328815495242686" crossorigin="anonymous">
+                </script>
+            </div>
+            
+            <div id="filters_div">
+                <nav>
+                    <ul>
+                        <div>
+                            <li>
+                                <p style="cursor: pointer;">Categoria</p>
+                                <select name="category" id="category_select">
+                                    <option value="0">Selecionar</option>
+                                    <option value="1">Romance</option>
+                                    <option value="2">Conto</option>
+                                    <option value="3">Crônica</option>
+                                    <option value="4">Poesia</option>
+                                    <option value="5">Drama</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p>Gênero</p>
+                                <select name="genre" id="genre_select">
+                                    <option value="0">Selecionar</option>
+                                    <option value="1">Ficção</option>
+                                    <option value="2">Não-Ficção</option>
+                                    <option value="3">Aventura</option>
+                                    <option value="4">Drama</option>
+                                    <option value="5">Memórias</option>
+                                    <option value="6">Fantasia</option>
+                                    <option value="7">Infantil</option>
+                                    <option value="8">Terror</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p>Avaliações</p>
+                                <select name="rating" id="rating_select">
+                                    <option value="1">Maiores Notas</option>
+                                    <option value="2">Menores Notas</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p>Visualizações</p>
+                                <select name="views" id="views_select">
+                                    <option value="1">Mais Visto</option>
+                                    <option value="2">Menos Visto</option>
+                                </select>
+                            </li>
+                            <li>
+                                <p>Data</p>
+                                <select name="date" id="date_select">
+                                    <option value="1">
+                                        Mais Recente
+                                    </option>
+                                    <option value="2">
+                                        Menos Recente
+                                    </option>
+                                </select>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+            <button id="filtros_animation_buttom" onclick="filters_animation()">FILTROS</button>
+            <section id="main_section">
+                <section id="popular_books_div">
+                    <div id="popular_books_text">
+                        <h2>OS MELHORES</h2>
+                        <p>
+                            Estes São os favoritos da galera
+                            <br>
+                            Os mais lidos, comentados e com melhores avaliações
+                            <br>
+                            O que está esperando bora ler!
+                        </p>
+                    </div>
+                    <div id="popular_books_catalog_div">
+                        <div>
+                            <section class="popular_books_catalog_items" id="most_popular_catalog_id_2">
+                                <img src="" style="width: 100%; height:100%;" id="most_popular_img_2">
+                            </section>
+                            <section class="popular_books_catalog_items" id="most_popular_catalog_id_1">
+                                <img src="" style="width: 100%; height:100%;" id="most_popular_img_1">
+                            </section>
+                            <section class="popular_books_catalog_items" id="most_popular_catalog_id_3">
+                                <img src="" style="width: 100%; height:100%;" id="most_popular_img_3">
+                            </section>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section id="catalog_section">
+                    <div>
+                        <ul>
+                            <li id="catalog_id_1">
+                                <a href="/pages/secundpages/item_info.html">
+                                    <img src="" style="width: 100%;height:100%;">
+                                </a>
+                            </li>
+                            <li id="catalog_id_2"></li>
+                            <li id="catalog_id_3"></li>
+                            <li id="catalog_id_4"></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li id="catalog_id_5"></li>
+                            <li id="catalog_id_6"></li>
+                            <li id="catalog_id_7"></li>
+                            <li id="catalog_id_8"></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li id="catalog_id_9"></li>
+                            <li id="catalog_id_10"></li>
+                            <li id="catalog_id_11"></li>
+                            <li id="catalog_id_12"></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li id="catalog_id_13"></li>
+                            <li id="catalog_id_14"></li>
+                            <li id="catalog_id_15"></li>
+                            <li id="catalog_id_16"></li>
+                        </ul>
+                    </div>
+                </section>
+                
+            </section>
+        </div>
+        <footer>
+            <div id="footer_main">
+                <section>
+                    <div id="copy_div">
+                        <h3 id="copy_h3">Copiado para a área de transfêrencia</h3>
+                    </div>
+                    <div id="footer_logo_main_div">
+                        <div id="footer_image_logo"><img src="/img/zblogo.png" style="width: 100%; height: 100%;border-radius:50px;"></div>
+                        <div id="footer_text_logo"><h1>ZkBook's</h1></div>
+                    </div>
+                    <div id="footer_contact_main_div">
+                        <div>
+                            <div id="footer_e-mail" onclick="navigator.clipboard.writeText('zkbookscorporation@gmail.com');copy_animation()">zkbookscorporation@gmail.com</div>
+                            <div id="footer_instagram">
+                                <a href="https://www.instagram.com/zkbooks_official/" target="_blank"><img src="/img/instagram_icon.png" style="width: 35%; height: 35%;" class="contact_link" id="teste_id"></a>
+                            </div>
+                            <div id="footer_youtube">
+                                <a href="https://www.youtube.com/channel/UC5X8JO-W8FpAL5KTpuXBjvQ/featured" target="_blank"><img src="/img/youtube_icon.png" style="width: 35%; height: 35%;" class="contact_link"></a>
+                            </div>
+                            <div id="footer_twitter">
+                                <a href="https://twitter.com/Zkbooks_oficial" target="_blank"><img src="/img/twitter_icon.png" style="width: 35%; height: 35%;" class="contact_link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="copyright_div">©Todos os Direitos Reservados</div>
+                </section>
+                <section>
+                    <div id="footer_info_div">
+                        <a href="pages/secundpages/politicas.html">Políticas de Privacidade</a>
+                        <a href="pages/secundpages/termos.html">Termos</a>
+                        <a href="pages/secundpages/sobre.html">Sobre</a>
+                    </div>
+                </section>
+            </div>
+            
+        </footer>
+    </body>
+    <script src="/js/htmlcontroller.js"></script>
+</html>
